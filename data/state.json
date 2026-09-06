@@ -1,0 +1,230 @@
+{
+  "settings": {
+    "workspace": "Framehouse Studio",
+    "timezone": "Africa/Lagos",
+    "dayStart": "08:00",
+    "dayEnd": "20:00",
+    "slotMinutes": 30,
+    "defaultBufferMinutes": 15
+  },
+  "resources": [
+    {
+      "id": "studio-a",
+      "name": "Studio A",
+      "type": "Space",
+      "group": "Studios",
+      "capacity": 14,
+      "bufferBefore": 15,
+      "bufferAfter": 30,
+      "tags": [
+        "cyclorama",
+        "daylight",
+        "sound-treated"
+      ],
+      "color": "orange",
+      "active": true
+    },
+    {
+      "id": "studio-b",
+      "name": "Studio B",
+      "type": "Space",
+      "group": "Studios",
+      "capacity": 8,
+      "bufferBefore": 15,
+      "bufferAfter": 15,
+      "tags": [
+        "blackout",
+        "portrait"
+      ],
+      "color": "sand",
+      "active": true
+    },
+    {
+      "id": "camera-1",
+      "name": "Camera Kit 1",
+      "type": "Gear",
+      "group": "Camera",
+      "capacity": 1,
+      "bufferBefore": 15,
+      "bufferAfter": 15,
+      "tags": [
+        "Canon C70",
+        "24\u201370mm",
+        "batteries"
+      ],
+      "color": "blue",
+      "active": true
+    },
+    {
+      "id": "camera-2",
+      "name": "Camera Kit 2",
+      "type": "Gear",
+      "group": "Camera",
+      "capacity": 1,
+      "bufferBefore": 15,
+      "bufferAfter": 15,
+      "tags": [
+        "Sony FX3",
+        "24\u2013105mm",
+        "batteries"
+      ],
+      "color": "blue",
+      "active": true
+    },
+    {
+      "id": "lighting-1",
+      "name": "Lighting Kit",
+      "type": "Gear",
+      "group": "Lighting",
+      "capacity": 1,
+      "bufferBefore": 20,
+      "bufferAfter": 20,
+      "tags": [
+        "Aputure 600D",
+        "2\u00d7 300X",
+        "stands"
+      ],
+      "color": "yellow",
+      "active": true
+    },
+    {
+      "id": "edit-room",
+      "name": "Editing Room",
+      "type": "Room",
+      "group": "Post",
+      "capacity": 3,
+      "bufferBefore": 0,
+      "bufferAfter": 0,
+      "tags": [
+        "Mac Studio",
+        "reference monitor"
+      ],
+      "color": "green",
+      "active": true
+    },
+    {
+      "id": "audio-kit",
+      "name": "Audio Kit",
+      "type": "Gear",
+      "group": "Audio",
+      "capacity": 1,
+      "bufferBefore": 10,
+      "bufferAfter": 10,
+      "tags": [
+        "boom",
+        "wireless lavs",
+        "recorder"
+      ],
+      "color": "purple",
+      "active": true
+    }
+  ],
+  "bookings": [
+    {
+      "id": "bk-1001",
+      "title": "Ayo Beauty Campaign",
+      "date": "2026-09-12",
+      "start": "09:00",
+      "end": "12:00",
+      "resources": [
+        "studio-a",
+        "camera-2",
+        "lighting-1"
+      ],
+      "organizer": "Nora Okafor",
+      "status": "confirmed",
+      "kind": "booking",
+      "createdAt": "2026-09-04T10:15:00.000Z"
+    },
+    {
+      "id": "bk-1002",
+      "title": "Product tabletop pickup",
+      "date": "2026-09-12",
+      "start": "14:00",
+      "end": "15:00",
+      "resources": [
+        "camera-1"
+      ],
+      "organizer": "Jide Bello",
+      "status": "confirmed",
+      "kind": "booking",
+      "createdAt": "2026-09-05T12:08:00.000Z"
+    },
+    {
+      "id": "bk-1003",
+      "title": "Podcast portraits",
+      "date": "2026-09-12",
+      "start": "18:00",
+      "end": "19:30",
+      "resources": [
+        "studio-b",
+        "camera-2",
+        "lighting-1"
+      ],
+      "organizer": "Tomi Eze",
+      "status": "confirmed",
+      "kind": "booking",
+      "createdAt": "2026-09-05T15:20:00.000Z"
+    },
+    {
+      "id": "bk-1004",
+      "title": "Offline edit session",
+      "date": "2026-09-12",
+      "start": "11:00",
+      "end": "15:00",
+      "resources": [
+        "edit-room"
+      ],
+      "organizer": "Dami Yusuf",
+      "status": "confirmed",
+      "kind": "booking",
+      "createdAt": "2026-09-05T16:02:00.000Z"
+    },
+    {
+      "id": "mt-01",
+      "title": "Sensor clean / calibration",
+      "date": "2026-09-12",
+      "start": "18:00",
+      "end": "19:00",
+      "resources": [
+        "camera-1"
+      ],
+      "organizer": "Operations",
+      "status": "blocked",
+      "kind": "maintenance",
+      "createdAt": "2026-09-03T08:00:00.000Z"
+    },
+    {
+      "id": "mt-02",
+      "title": "Floor repaint curing",
+      "date": "2026-09-13",
+      "start": "08:00",
+      "end": "13:00",
+      "resources": [
+        "studio-a"
+      ],
+      "organizer": "Operations",
+      "status": "blocked",
+      "kind": "maintenance",
+      "createdAt": "2026-09-04T08:30:00.000Z"
+    }
+  ],
+  "audit": [
+    {
+      "id": "au-1",
+      "type": "booking",
+      "title": "Ayo Beauty Campaign confirmed",
+      "detail": "Studio A \u00b7 Camera Kit 2 \u00b7 Lighting Kit",
+      "at": "2026-09-04T10:15:00.000Z",
+      "actor": "Nora Okafor"
+    },
+    {
+      "id": "au-2",
+      "type": "maintenance",
+      "title": "Camera Kit 1 maintenance blocked",
+      "detail": "Sep 12 \u00b7 13:30\u201315:30",
+      "at": "2026-09-03T08:00:00.000Z",
+      "actor": "Operations"
+    }
+  ]
+}

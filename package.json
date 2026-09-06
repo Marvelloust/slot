@@ -1,0 +1,14 @@
+{
+  "name": "slot-resource-scheduling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Constraint-based studio resource scheduling with conflict detection, alternatives, buffers, atomic booking, and resource utilization.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js",
+    "test": "node tests.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

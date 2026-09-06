@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F1EEE5"><meta name="description" content="Slot — resource scheduling and conflict resolution.">
+<link rel="stylesheet" href="./styles.css"><title>Slot — Resource Scheduling</title>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <a class="brand" href="#"><span class="mark"><i></i><i></i><i></i></span><span><strong>SLOT</strong><small>RESOURCE BOARD</small></span></a>
+  <div class="date-nav"><button id="prevDay">←</button><button id="dateBtn"><span id="dateLabel">SAT · SEP 12</span><small id="dateSub">2026</small></button><button id="nextDay">→</button><input type="date" id="dateInput" value="2026-09-12" hidden></div>
+  <div class="top-actions"><button class="ghost" id="auditBtn">Activity</button><button class="primary" id="newBookingBtn">＋ New booking</button></div>
+</header>
+
+<main>
+<section class="summary">
+  <div><span class="eyebrow">FRAMEHOUSE / OPERATIONS</span><h1>Resource board</h1></div>
+  <div class="summary-stats" id="summaryStats"></div>
+</section>
+
+<section class="board-shell">
+  <aside class="resource-col">
+    <div class="resource-head"><span>RESOURCE</span><button id="resourceFilter">All types ▾</button></div>
+    <div id="resourceLabels"></div>
+  </aside>
+  <section class="timeline-wrap">
+    <div class="timeline-head" id="timelineHead"></div>
+    <div class="timeline-grid" id="timelineGrid"></div>
+  </section>
+</section>
+
+<section class="util-section">
+  <div class="section-head"><div><span class="eyebrow">CAPACITY</span><h2>Utilization</h2></div><p>Booked minutes inside the studio operating window.</p></div>
+  <div class="util-grid" id="utilGrid"></div>
+</section>
+</main>
+
+<div class="modal-backdrop" id="modalBackdrop"></div>
+<aside class="drawer" id="drawer"></aside>
+<div class="toast-stack" id="toasts"></div>
+</div>
+<script src="./app.js"></script>
+</body></html>
